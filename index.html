@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .input-container label {
+            font-weight: bold;
+        }
+
+        .input-container input {
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(to right, blue 50%, white 50%);
+            position: relative;
+        }
+
+        .left-column {
+            background-color: #f0f0f0;
+            padding: 20px;
+            height: 100vh;
+            /* Set the left column's height to fill the entire viewport */
+        }
+
+        .instagramContainer {
+            margin-bottom: 20px;
+            /* Add some space between items */
+        }
+
+        .instagramIcon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+
+        .background-image {
+            flex: 1;
+            background-image: url('images.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 600px; /* Set your desired height here */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6 left-column"> <!-- Left column -->
+
+
+                <div>
+                    <!-- Image at the top-left corner with the correct src and alt attributes and managed size -->
+                    <img id="topLeftImage" src="pisca.png" alt="Pisca Image" width="100px" height="100px">
+                </div>
+                <br>
+                <div id="instagramContainer">
+                    <a href="http://linkedin.com" target="_blank">
+                        <img class="instagramIcon" src="lnkd.png" alt="">
+                        <span>Sign up with LinkedIn</span>
+                    </a>
+                </div>
+
+                <div id="instagramContainer">
+                    <a href="http://instagram.com" target="_blank">
+                        <img class="instagramIcon" src="inst.jpg" alt="">
+                        <span>Sign up with Instagram</span>
+                    </a>
+                </div>
+
+                <div id="instagramContainer">
+                    <a href="http://facebook.com" target="_blank">
+                        <img class="instagramIcon" src="fb.png" alt="">
+                        <span>Sign up with Facebook</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6"> <!-- Right column -->
+                <!-- Content for the right column goes here -->
+                <div class="input-container background-image">
+                <br><br><br>
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up</h1>
+                <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get started absolutely
+                    free</b>
+
+
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your Password">
+                    </div>
+
+                    <div >
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up</h2>
+                        <!-- <input type="button"id="but" name="button" placeholder="Sign Up"> -->
+                    </div>
+                </div>
+                    <!-- <div style="display: flex; flex-direction: column;">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    
+                    <br>
+                    <div style="display: flex; flex-direction: column;">
+                        <label for="email">Password</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Password">
+                    </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
